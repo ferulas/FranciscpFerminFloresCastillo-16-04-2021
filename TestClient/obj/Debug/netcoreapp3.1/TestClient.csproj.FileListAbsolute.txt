@@ -1,0 +1,9 @@
+C:\Users\francisco.flores\source\repos\Test\TestClient\obj\Debug\netcoreapp3.1\TestClient.csprojAssemblyReference.cache
+C:\Users\francisco.flores\source\repos\Test\TestClient\obj\Debug\netcoreapp3.1\TestClient.AssemblyInfoInputs.cache
+C:\Users\francisco.flores\source\repos\Test\TestClient\obj\Debug\netcoreapp3.1\TestClient.AssemblyInfo.cs
+C:\Users\francisco.flores\source\repos\Test\TestClient\obj\Debug\netcoreapp3.1\TestClient.csproj.CoreCompileInputs.cache
+C:\Users\francisco.flores\source\repos\Test\TestClient\bin\Debug\netcoreapp3.1\TestClient.deps.json
+C:\Users\francisco.flores\source\repos\Test\TestClient\bin\Debug\netcoreapp3.1\TestClient.dll
+C:\Users\francisco.flores\source\repos\Test\TestClient\bin\Debug\netcoreapp3.1\TestClient.pdb
+C:\Users\francisco.flores\source\repos\Test\TestClient\obj\Debug\netcoreapp3.1\TestClient.dll
+C:\Users\francisco.flores\source\repos\Test\TestClient\obj\Debug\netcoreapp3.1\TestClient.pdb

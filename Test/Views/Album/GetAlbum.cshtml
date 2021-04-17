@@ -1,0 +1,77 @@
+﻿@model TestClient.Models.Album
+
+@{
+    ViewData["Title"] = "GetAlbum";
+}
+
+<h1>GetAlbum</h1>
+
+<div>
+    <h4>Album</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+    </dl>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Photos[0].thumbnailUrl)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Photos[0].Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Photos[0].Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Photos[0].Url)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Photos)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.thumbnailUrl)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <th>
+                    <img src=@Html.DisplayFor(model => model.Photos[0].Url)  width="200px"/>                    
+                </th>
+                <td>
+
+                    @Html.ActionLink("Visualizar Comentarios", "GetComments", new { id = item.Id })
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div>   
+    <a asp-action="Index">Back to List</a>
+</div>
